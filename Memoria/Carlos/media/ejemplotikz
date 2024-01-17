@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+    \begin{scope}[every node/.style={shape=circle,thick,draw=lightgray,fill=lightgray}]
+    \node (A) at (0,0) {A};
+    \node (B) at (2,0) {B};
+    \node (C) at (1,2) {C};
+\end{scope}
+
+\begin{scope}[every edge/.style={draw=black,very thick}]
+    \path [-latex] (A) edge (B);
+    \path [-latex] (B) edge (C);
+    \path [-latex reversed] (C) edge (A);
+\end{scope}
+\end{tikzpicture}

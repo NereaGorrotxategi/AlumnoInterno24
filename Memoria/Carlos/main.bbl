@@ -1,0 +1,230 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{physiboss2}{article}{}
+      \name{author}{8}{}{%
+        {{hash=9e1e33b753ccf391a9b529e17efa6391}{%
+           family={Ponce-de-Leon},
+           familyi={P\bibinithyphendelim L\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=70fc9ef4e211024fc254d39867256b27}{%
+           family={Montagud},
+           familyi={M\bibinitperiod},
+           given={Arnau},
+           giveni={A\bibinitperiod}}}%
+        {{hash=78c1347d6ab985ba28eb2a4367ec1b85}{%
+           family={Noël},
+           familyi={N\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=8b2fb7df1e404afa7f7f92c9b641414d}{%
+           family={Meert},
+           familyi={M\bibinitperiod},
+           given={Annika},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d782355374b3454e7b09135cf60f38bd}{%
+           family={Pradas},
+           familyi={P\bibinitperiod},
+           given={Gerard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5c1ddc0a0d51fdf6e92b84c8ab9cd516}{%
+           family={Barillot},
+           familyi={B\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9701c1ed56bc3f48bb130ad1dc7dc5e7}{%
+           family={Calzone},
+           familyi={C\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fe9d891995eb21aa72bc9563c2d70575}{%
+           family={Valencia},
+           familyi={V\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d2ca8258edbf4ca373a38667daf6cbe}
+      \strng{fullhash}{5f4bb76b0a3a0f2223ed398f38d10b43}
+      \strng{bibnamehash}{7d2ca8258edbf4ca373a38667daf6cbe}
+      \strng{authorbibnamehash}{7d2ca8258edbf4ca373a38667daf6cbe}
+      \strng{authornamehash}{7d2ca8258edbf4ca373a38667daf6cbe}
+      \strng{authorfullhash}{5f4bb76b0a3a0f2223ed398f38d10b43}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{npj Systems Biology and Applications}
+      \field{number}{54}
+      \field{title}{PhysiBoSS 2.0: a sustainable integration of stochastic Boolean and agent-based modelling frameworks}
+      \field{volume}{9}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb https://doi.org/10.1038/s41540-023-00314-4
+      \endverb
+    \endentry
+    \entry{gitrepo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9e1e33b753ccf391a9b529e17efa6391}{%
+           family={Ponce-de-Leon},
+           familyi={P\bibinithyphendelim L\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{9e1e33b753ccf391a9b529e17efa6391}
+      \strng{fullhash}{9e1e33b753ccf391a9b529e17efa6391}
+      \strng{bibnamehash}{9e1e33b753ccf391a9b529e17efa6391}
+      \strng{authorbibnamehash}{9e1e33b753ccf391a9b529e17efa6391}
+      \strng{authornamehash}{9e1e33b753ccf391a9b529e17efa6391}
+      \strng{authorfullhash}{9e1e33b753ccf391a9b529e17efa6391}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/PhysiBoSS/PhysiBoSS}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{PhysiBoSS}
+      \field{year}{2023}
+    \endentry
+    \entry{physicell}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5e4a89dc0c8aedd5e4fe5df212877944}{%
+           family={Ghaffarizadeh},
+           familyi={G\bibinitperiod},
+           given={Ahmadreza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=38d1a8cda2f23ba6cbd22857db71d9f8}{%
+           family={Heiland},
+           familyi={H\bibinitperiod},
+           given={Randy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d615aed19a7deec6b401de13988354a4}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Samuel\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=4eca615ea5420c857ee2ff68a34718ea}{%
+           family={Mumenthaler},
+           familyi={M\bibinitperiod},
+           given={Shannon\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3bcbc52a0a0c0e2a4897d14de44900c2}{%
+           family={Macklin},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{02fa33e6738a3b18815ba25b82ef9564}
+      \strng{fullhash}{fca2ea642b9c26152e75d027ba3d02a3}
+      \strng{bibnamehash}{02fa33e6738a3b18815ba25b82ef9564}
+      \strng{authorbibnamehash}{02fa33e6738a3b18815ba25b82ef9564}
+      \strng{authornamehash}{02fa33e6738a3b18815ba25b82ef9564}
+      \strng{authorfullhash}{fca2ea642b9c26152e75d027ba3d02a3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS Computational Biology}
+      \field{title}{PhysiCell: An open source physics-based cell simulator for 3-D multicellular systems}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb https://doi.org/10.1371/journal.pcbi.1005991
+      \endverb
+    \endentry
+    \entry{maboss}{article}{}
+      \name{author}{9}{}{%
+        {{hash=f51aef1d70ac918479d19c5c5f135d5b}{%
+           family={Stoll},
+           familyi={S\bibinitperiod},
+           given={Gautier},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5547d2a3d78473e7b9fff3f0e12011f6}{%
+           family={Caron},
+           familyi={C\bibinitperiod},
+           given={Barthélémy},
+           giveni={B\bibinitperiod}}}%
+        {{hash=58c3a0224afd3c5e4b7e3332a5390779}{%
+           family={Viara},
+           familyi={V\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1aee7ddc010c44e54d90140c990e3aad}{%
+           family={Dungourd},
+           familyi={D\bibinitperiod},
+           given={Aurélien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1293d3a35800ec13dfc02548c4d7c53c}{%
+           family={Zinovyev},
+           familyi={Z\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=859f54c22352f76030ec8eb07fac0a84}{%
+           family={Naldi},
+           familyi={N\bibinitperiod},
+           given={Aurélien},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1a77c57bdcbf5f51b0f611051ff38837}{%
+           family={Droemer},
+           familyi={D\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5c1ddc0a0d51fdf6e92b84c8ab9cd516}{%
+           family={Barillot},
+           familyi={B\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9701c1ed56bc3f48bb130ad1dc7dc5e7}{%
+           family={Calzone},
+           familyi={C\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f068fd1bf1dc831a5140764f0b47b37b}
+      \strng{fullhash}{5c4e36704237ba2d3d3388c5f37efc36}
+      \strng{bibnamehash}{f068fd1bf1dc831a5140764f0b47b37b}
+      \strng{authorbibnamehash}{f068fd1bf1dc831a5140764f0b47b37b}
+      \strng{authornamehash}{f068fd1bf1dc831a5140764f0b47b37b}
+      \strng{authorfullhash}{5c4e36704237ba2d3d3388c5f37efc36}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics}
+      \field{number}{14}
+      \field{title}{MaBoSS 2.0: and environment for stochastic Boolean modeling}
+      \field{volume}{33}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{2226\bibrangedash 2228}
+      \range{pages}{3}
+      \verb{doi}
+      \verb https://doi.org/10.1093/bioinformatics/btx123
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
