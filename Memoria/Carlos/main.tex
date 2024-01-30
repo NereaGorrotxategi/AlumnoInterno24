@@ -1,0 +1,147 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage[margin=22mm]{geometry}
+\usepackage{units}
+\usepackage{fontspec}
+%\setmainfont{Carlito}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{cases}
+\usepackage{wrapfig}
+\usepackage{tikz}
+
+%Libreria de programación con Matlab
+\usepackage{listings}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+%Formateo de encabezado y pie con definición de color unav
+\definecolor{unavred}{HTML}{972d34}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\renewcommand{\headrule}{
+	\vspace{-8pt}{\hrulefill}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{unavred} Título corto de la memoria}
+\fancyhead[R]{\footnotesize\color{unavred} Carlos Mart\'inez de la Fuente}
+\fancyfoot[R]{\color{unavred}$\nicefrac{\mathbf{\thepage}}{\mathbf{\pageref*{LastPage}}}$}
+
+%Formateo de las secciones
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{unavred}\Large\normalfont\bfseries}
+{\thesection}{1em}{\MakeUppercase}
+%\newcommand{\addulc}[1]{\underline{\MakeUppercase{#1}}:}
+\titleformat{\subsection}
+{\large\normalfont\bfseries\color{unavred}}
+{\thesubsection}{1em}{}
+
+%Formateo de los caption
+\usepackage[format=plain,labelfont={color=unavred,bf,it},textfont=it]{caption}
+\usepackage[format=plain,labelfont={color=unavred,bf,it},textfont=it]{subcaption}
+
+\usepackage{chngcntr}
+\counterwithin*{figure}{section}
+\counterwithin*{figure}{subsection}
+\counterwithin*{figure}{subsubsection}
+\renewcommand{\thefigure}{%
+	\ifnum\value{subsection}=0
+	\thesection.\arabic{figure}%
+	\else
+	\ifnum\value{subsubsection}=0
+	\thesubsection.\arabic{figure}%
+	\else
+	\thesubsubsection.\arabic{figure}%
+	\fi
+	\fi
+}
+
+\setlength\parindent{0pt}
+
+%Bibliografía
+\usepackage[backend=biber,style=numeric,maxbibnames=3,sorting=none]{biblatex}
+\addbibresource{biblio.bib}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			
+			\Huge
+			\textbf{Título de la memoria como alumno interno}
+			
+			\vspace{0.5cm}
+			\LARGE
+			Aplicación de la herramienta PhysiBoSS para la creación de gemelos digitales.
+			
+			\vspace{1.5cm}
+			
+			\textbf{Carlos Mart\'inez de la Fuente}
+			
+			\vfill
+			
+			
+			
+			\vspace{0.8cm}
+			
+			\includegraphics[width=0.4\textwidth]{Sello tecnun negro.jpg}
+			
+			\vspace{0.8cm}
+			\Large
+			Tecnun \--- Universidad de Navarra\\
+			Alumno Interno\\
+			Departamento de Biología Computacional\\
+			\today
+			
+		\end{center}
+	\end{titlepage}
+	\tableofcontents
+	\newpage
+	\section{Introducción}
+	En esta memoria se recoge lo aprendido y las experiencias adquiridas como alumno interno en el Departamento de Biología Computacional bajo la tutela del profesor D. Francisco Javier Planes.
+	
+	\subsection{¿Que es un gemelo digital?}
+	Con la capacidad computacional de la que disponemos en el presente es posible generar y simular um sistema complejo de respuestas químicas y estructuras que nos permita ver la evolución dinámica de dicho sistema. Esto es fundamentalmente en lo que consiste la técnica del gemelo digital.
+	\\Un ejemplo de esto lo tenemos en el trabajo de \textit{Ponce-de-Leon et al.}\supercite{physiboss2}, donde se simula la interacción de un sistema de células tumorales con un producto antitumoral.
+	\\En este artículo\supercite{physiboss2} también se emplea y enseña la herramienta \textit{PhysiBoSS}\supercite{gitrepo} que será también el foco de este estudio como alumno interno.
+	
+	\subsection{¿Que es \textit{PhysiBoSS}?}
+	\textit{PhysiBoSS} es la herramienta que utilizaremos. Se puede obtener desde el respositorio de Github: \url{https://github.com/PhysiBoSS/PhysiBoSS}.
+	\\Esta herramienta busca fusionar las funciones de las herramientas de  \textit{PhysiCell}\supercite{physicell} y \textit{MaBoSS}\supercite{maboss} (de donde obtiene su nombre) de tal forma que no dependa de las anteriores, evitando que al actualizar cualquiera de las dos ocasione algún tipo de incompatibilidad.
+	
+	\subsubsection{Modelos Booleanos con \textit{MaBoSS}}
+	\begin{wrapfigure}{hr}{0.4\textwidth}
+		\vspace*{-12pt}
+		\centering
+		\scalebox{1.2}{
+		\begin{tikzpicture}
+			\begin{scope}[every node/.style={shape=circle,thick,draw=lightgray,fill=lightgray},text=unavred]
+				\node (A) at (0,0) {A};
+				\node (B) at (2,0) {B};
+				\node (C) at (1,2) {C};
+			\end{scope}
+			
+			\begin{scope}[every edge/.style={draw=unavred,very thick}]
+				\path [-latex] (A) edge (B);
+				\path [-latex] (B) edge (C);
+				\path [-|] (C) edge (A);
+			\end{scope}
+		\end{tikzpicture}
+	}
+		\caption{Ejemplo de un sistema Booleano en el que A produce B, que produce C. C inhibe A.}
+		\label{fig:bool_ejemplo}
+	\end{wrapfigure}
+	Como indican en su artículo \textit{Stoll et al.}\supercite{maboss}, "MaBoSS es un software que permite simular poblaciones de células y modelar de forma estocástica los mecanismos intracelulares".
+	\\Un sistema Booleano (como el que se ve en la \hyperref[fig:bool_ejemplo]{Fig. \ref{fig:bool_ejemplo}}) consiste en una red de condiciones que son verdaderas o falsas (\textit{True} o \textit{False}) que implican o inhiben otra condición.
+	\\En el ámbito celular, un modelo Booleano nos permite describir las relaciones que existen dentro de la célula a través de los diversos mensajeros químicos.
+	\\\textit{MaBoSS} se apoya en esto para sus simulaciones dinámicas y estocásticas de sistemas.
+	
+	\subsubsection{Simulación de sistemas pluricelulares con \textit{PhysiCell}}
+	
+
+	\newpage
+	\printbibliography[title=Bibliografía consultada,heading=bibintoc]
+\end{document}

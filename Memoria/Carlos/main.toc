@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}¿Que es un gemelo digital?}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}¿Que es \textit {PhysiBoSS}?}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Modelos Booleanos con \textit {MaBoSS}}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Simulación de sistemas pluricelulares con \textit {PhysiCell}}{2}{subsubsection.1.2.2}%
+\contentsline {section}{Bibliografía consultada}{3}{subsubsection.1.2.2}%
